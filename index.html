@@ -1,0 +1,302 @@
+t<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <script src="/_sdk/telemetry_sdk.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黃露懿自傳</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Alegreya", serif;
+      }
+      .heading-font {
+        font-family: "Playfair Display", serif;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .hero-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.6)
+        );
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+  </head>
+  <body
+    data-template-id="__page-root"
+    class="w-full min-h-screen"
+    style="background: rgb(250, 248, 245)"
+  >
+    <header
+      class="relative w-full"
+      style="height: calc(70 * min(var(--vh, 1vh), 1vh))"
+    >
+      <img
+        data-template-id="hero-img"
+        class="canva-image absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+        src="https://www.overseas.edu.tw/wp-content/uploads/2020/10/%E6%A0%A1%E5%9C%92%E9%A2%A8%E6%99%AF01-1-scaled-1-2048x1536.jpg"
+        alt="Modern architectural view of Taipei Medical University with fountain feature outdoors."
+      />
+      <div
+        class="hero-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+      >
+        <h1
+          data-template-id="hero-name"
+          class="canva-text heading-font text-5xl md:text-7xl text-white mb-4"
+          style="
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-style: normal;
+            font-size: 34px;
+          "
+        >
+          黃露懿
+        </h1>
+        <p
+          data-template-id="hero-subtitle"
+          class="canva-text text-xl md:text-2xl text-white/90"
+          style="
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 22px;
+          "
+        >
+          Louise Fievel Handoko ─ 自傳
+        </p>
+      </div>
+    </header>
+    <main class="w-full max-w-4xl mx-auto px-6 py-16 space-y-20">
+      <section class="fade-in">
+        <h2
+          data-template-id="section1-title"
+          class="canva-text heading-font text-3xl mb-6 border-b-2 border-current pb-2"
+          style="
+            color: rgb(44, 44, 44);
+            font-weight: bold;
+            font-style: normal;
+            font-size: 26px;
+          "
+        >
+          一、基本資料
+        </h2>
+        <div class="md:flex gap-8 items-start">
+          <div class="md:w-2/3">
+            <p
+              data-template-id="section1-text"
+              class="canva-text leading-relaxed"
+              style="
+                color: rgb(58, 58, 58);
+                font-weight: 400;
+                font-style: normal;
+                font-size: 17px;
+              "
+            >
+              本人黃露懿，英文名 Louise Fievel Handoko，於西元 2007 年 8 月 20
+              日出生於印尼三寶瓏（Semarang）。自幼便在家庭的薰陶下養成了認真負責、自律勤奮的人格特質，凡事要求自己全力以赴，對於設定的目標從不輕言放棄。
+            </p>
+          </div>
+          <div class="md:w-1/3 mt-6 md:mt-0">
+            <img
+              data-template-id="semarang-img"
+              class="canva-image w-full h-48 object-cover rounded-lg shadow-lg"
+              loading="lazy"
+              src="https://images.pexels.com/photos/10618339/pexels-photo-10618339.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Breathtaking view of lush green mountains and cityscape in Semarang, Indonesia during the day."
+            />
+          </div>
+        </div>
+      </section>
+      <section class="fade-in">
+        <h2
+          data-template-id="section2-title"
+          class="canva-text heading-font text-3xl mb-6 border-b-2 border-current pb-2"
+          style="
+            color: rgb(44, 44, 44);
+            font-weight: bold;
+            font-style: normal;
+            font-size: 26px;
+          "
+        >
+          二、求學歷程
+        </h2>
+        <p
+          data-template-id="section2-text1"
+          class="canva-text leading-relaxed mb-4"
+          style="
+            color: rgb(58, 58, 58);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 17px;
+          "
+        >
+          國中就讀於印尼三寶瓏聖母瑪利亞國中（SMP Maria Mediatrix
+          Semarang），在校期間表現積極、學習態度端正。然而，受到全球新冠疫情（COVID-19）衝擊，學校被迫全面改採線上遠距教學，課程節奏大幅改變，自主學習難度也隨之提升，導致學業成績有所起伏，實感遺憾。
+        </p>
+        <p
+          data-template-id="section2-text2"
+          class="canva-text leading-relaxed mb-4"
+          style="
+            color: rgb(58, 58, 58);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 17px;
+          "
+        >
+          進入高中後，本人就讀於三寶瓏 Sedes Sapientiae 高中（SMA Sedes
+          Sapientiae
+          Semarang）。有鑑於疫情期間學習進度落後，入學後便下定決心奮起直追，每日自主複習、積極請教師長，透過不懈的努力逐步彌補學習缺口。在此期間，數學與資訊科技（Informatika）方面的表現尤為突出，多次榮獲班級前幾名，並曾達到全年級前十名之列，充分展現了刻苦向學的成果。
+        </p>
+        <p
+          data-template-id="section2-text3"
+          class="canva-text leading-relaxed"
+          style="
+            color: rgb(58, 58, 58);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 17px;
+          "
+        >
+          由於對數學與資訊領域具備良好的邏輯思維能力，且能理解多種程式語言的基本概念與應用，本人深感資訊工程是一門極具發展潛力的學科，因此立志以此為志業，積極規劃赴台深造。
+        </p>
+        <img
+          data-template-id="study-img"
+          class="canva-image w-full h-56 object-cover rounded-lg shadow-lg mt-8"
+          loading="lazy"
+          src="https://images.pexels.com/photos/4078342/pexels-photo-4078342.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+          alt="Close-up view of a programmer typing code on a laptop in a workspace."
+        />
+      </section>
+      <section class="fade-in">
+        <h2
+          data-template-id="section3-title"
+          class="canva-text heading-font text-3xl mb-6 border-b-2 border-current pb-2"
+          style="
+            color: rgb(44, 44, 44);
+            font-weight: bold;
+            font-style: normal;
+            font-size: 26px;
+          "
+        >
+          三、來台就學
+        </h2>
+        <p
+          data-template-id="section3-text1"
+          class="canva-text leading-relaxed mb-4"
+          style="
+            color: rgb(58, 58, 58);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 17px;
+          "
+        >
+          台灣擁有完善的高等教育體系與優良的學術環境，對於有志在資訊科技領域深耕的學子而言，是極佳的求學選擇。基於對台灣教育品質的高度肯定，以及渴望在全新環境中拓展視野、精進自我的強烈意願，本人決定負笈來台，報考嶺東科技大學資訊工程系。入學後，憑藉著紮實的學科基礎與積極的學習態度，在系上學業成績名列第一，深感欣慰。
+        </p>
+        <p
+          data-template-id="section3-text2"
+          class="canva-text leading-relaxed"
+          style="
+            color: rgb(58, 58, 58);
+            font-weight: 400;
+            font-style: normal;
+            font-size: 17px;
+          "
+        >
+          目前本人所參與的是海青班計畫，該計畫雖提供了寶貴的實習工作機會，然而相較於正規學制，課程學習的比重較為有限，難以充分滿足本人對於系統性學習資訊工程專業知識的需求。本人衷心希望能轉入正規大學課程，全力專注於學術研究與專業技能的培養，期盼在台灣的求學生涯中，能夠奠定更為厚實的資訊工程理論與實務基礎。
+        </p>
+      </section>
+    </main>
+    <footer
+      data-template-id="footer-section"
+      class="canva-footer w-full py-8 text-center"
+      style="background: rgb(44, 44, 44)"
+    >
+      <p
+        data-template-id="footer-text"
+        class="canva-text text-sm"
+        style="
+          color: rgb(204, 204, 204);
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+        "
+      >
+        © 2026 黃露懿 Louise Fievel Handoko
+      </p>
+    </footer>
+    <script src="/_sdk/editing_sdk.js"></script>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'a11ddc25046df8d3',t:'MTc4MjQ5NDE4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
